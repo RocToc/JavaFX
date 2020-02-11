@@ -3,7 +3,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<GridPane fx:controller="sample.TicTacToeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0"
+<GridPane fx:controller="tictactoe.TicTacToeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="669.0"
           prefWidth="824.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -16,55 +17,47 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
     </rowConstraints>
     <children>
-        <Button fx:id="button11" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="1">
+        <Button fx:id="button11" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button12" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="2"
-                GridPane.columnIndex="1">
+        <Button fx:id="button12" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="1">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button13" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="3"
-                GridPane.columnIndex="2">
+        <Button fx:id="button13" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="2">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button21" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="4"
-                GridPane.rowIndex="1">
+        <Button fx:id="button21" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.rowIndex="1">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button22" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="5"
-                GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="button22" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button23" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="6"
-                GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Button fx:id="button23" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button31" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="7"
-                GridPane.rowIndex="2">
+        <Button fx:id="button31" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.rowIndex="2">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button32" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="8"
-                GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button fx:id="button32" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <font>
                 <Font size="96.0"/>
             </font>
         </Button>
-        <Button fx:id="button33" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" text="9"
-                GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Button fx:id="button33" onMouseClicked="#onPressButton" mnemonicParsing="false" prefHeight="391.0" prefWidth="630.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
             <font>
                 <Font size="96.0"/>
             </font>

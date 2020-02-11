@@ -1,5 +1,6 @@
-package sample;
+package tictactoe;
 
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -24,7 +25,13 @@ public class TicTacToeController {
     @FXML
     Button button33;
 
+    TicTacToeModel model = new TicTacToeModel();
 
-
+    public void onPressButton(MouseEvent event) {
+        Button source = (Button) event.getSource();
+        if (source.getText().equals("")) {
+            System.out.println("Pressed -> " + source.getId());
+            source.setText(model.getPlayerSymbol());
+        }
+    }
 }
-
