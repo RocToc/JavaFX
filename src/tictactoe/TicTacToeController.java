@@ -27,11 +27,14 @@ public class TicTacToeController {
 
     TicTacToeModel model = new TicTacToeModel();
 
+
+
     public void onPressButton(MouseEvent event) {
         Button source = (Button) event.getSource();
         if (source.getText().equals("")) {
             System.out.println("Pressed -> " + source.getId());
             source.setText(model.getPlayerSymbol());
         }
+
     }
 }
