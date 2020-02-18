@@ -53,6 +53,12 @@ public class TicTacToeModel {
             winner = positionValues.get(2);
         }
 
+        if (!winner.equals("")) {
+            System.out.println("Winner -> " + winner);
+
+
+        }
+
         return winner;
     }
 }

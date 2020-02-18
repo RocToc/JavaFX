@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TicTacToeController {
+    boolean end = true;
     @FXML
     Button button11;
     @FXML
@@ -30,11 +31,15 @@ public class TicTacToeController {
 
     TicTacToeModel model = new TicTacToeModel();
 
+
+
     public void onPressButton(MouseEvent event) {
+        {
         Button source = (Button) event.getSource();
         if (source.getText().equals("")) {
             System.out.println("Pressed -> " + source.getId());
             source.setText(model.getPlayerSymbol());
+            }
         }
 
         List<String> positionValues = new ArrayList<>();
@@ -48,8 +53,18 @@ public class TicTacToeController {
         positionValues.add(7, button32.getText());
         positionValues.add(8, button33.getText());
         String winner = model.getWinnerIfExist(positionValues);
-    }
-    public String winner(Event event) {
-        if ()
+
+        if (winner != "") {
+            button12.textProperty().setValue(winner);
+            button21.textProperty().setValue("W");
+            button22.textProperty().setValue("I");
+            button23.textProperty().setValue("N");
+            button11.textProperty().setValue("");
+            button13.textProperty().setValue("");
+            button31.textProperty().setValue("");
+            button32.textProperty().setValue("");
+            button33.textProperty().setValue("");
+
+        }
     }
 }
